@@ -17,7 +17,7 @@ function convertCSVtoExcel() {
     });
   }
   else {
-    alert("Por favor, selecione um arquivo .csv.");
+    alert("Por favor, selecione um arquivo .csv");
   }
 
 }
