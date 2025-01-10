@@ -1,7 +1,7 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
 /* Geral */
-
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +20,6 @@ body {
 }
 
 /* Navbar */
-
 header {
   position: absolute;
   z-index: 5;
@@ -39,31 +38,31 @@ nav {
   align-items: center;
   justify-content: space-around;
   gap: 1.4rem;
+}
 
-  a,
-  div {
-    background-color: transparent;
-    font-size: 1.4rem;
-    text-decoration: none;
-    transition: 0.5s;
+nav a,
+nav div {
+  background-color: transparent;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: 0.5s;
+}
 
-    &:hover {
-      color: rgb(182, 182, 182);
-    }
-  }
+nav a:hover,
+nav div:hover {
+  color: rgb(182, 182, 182);
 }
 
 /* Home */
-
 .home {
-  position: relative; /* Necessário para posicionar o pseudo-elemento corretamente */
+  position: relative;
   background-image: url("./img/Wallpaper.jpg");
   background-size: cover;
   width: 100%;
   height: 50vh;
   background-position: center;
   padding: 20px;
-  color: white; /* Certifique-se de que o texto seja legível sobre o fundo */
+  color: white;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -71,25 +70,20 @@ nav {
 }
 
 .home::before {
-  content: ""; /* Cria um conteúdo vazio */
-  position: absolute; /* Posiciona o pseudo-elemento sobre a imagem */
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.705
-  ); /* Cor escura com opacidade, ajuste conforme necessário */
-  z-index: 1; /* Garante que o pseudo-elemento fique por cima da imagem */
+  background: rgba(0, 0, 0, 0.705);
+  z-index: 1;
 }
 
 .home h1,
 .home h2 {
-  position: relative; /* Garantir que o texto fique acima do pseudo-elemento */
-  z-index: 2; /* Garantir que o texto fique acima do fundo escurecido */
+  position: relative;
+  z-index: 2;
   font-size: 1.8rem;
   line-height: 5rem;
 }
@@ -100,7 +94,6 @@ nav {
 }
 
 /* Cartões */
-
 .cartoes {
   width: 100%;
   height: auto;
@@ -133,9 +126,11 @@ nav {
   padding: 1.5rem;
   border-radius: 0.7rem;
   transition: 0.5s;
-
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: #0000009f 0px 5px 5px;
-  }
 }
+
+.baixar:hover {
+  transform: translateY(-3px);
+  box-shadow: rgba(0, 0, 0, 0.6235294118) 0px 5px 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
